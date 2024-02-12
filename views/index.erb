@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASYPUSH</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <script src="htmx.min.js"></script>
+  </head>
+  <body>
+    <header class="container mx-auto flex ">
+      <p class="text-2xl font-medium">easy<span class="text-blue-400">P</span>ush</p>
+    </header>
+    <div class="flex flex-row">
+      <p class="text-2xl" >hello world</p>
+      <div hx-on:click="alert('Clicked!')">Click</div>
+    </div>
+  </body>
+</html>
