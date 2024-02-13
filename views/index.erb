@@ -8,12 +8,30 @@
     <script src="htmx.min.js"></script>
   </head>
   <body>
-    <header class="container mx-auto flex ">
-      <p class="text-2xl font-medium">easy<span class="text-blue-400">P</span>ush</p>
-    </header>
-    <div class="flex flex-row">
-      <p class="text-2xl" >hello world</p>
-      <div hx-on:click="alert('Clicked!')">Click</div>
+    <nav class="bg-grey-800 mx-auto my-4 flex justify-evenly">
+      <span class="text-2xl font-medium">// easy<span class="text-blue-400">P</span>ush</span>
+      <div class="flex justify-around gap-8">
+       
+        <select>
+          <option disabled selected value>User</option>
+          <option hx-get="/user/form" hx-target="#content">Add User</option>
+          <option>Search</option>
+        </select>
+     
+        <select>
+          <option disabled selected value>Groups</option>
+          <option>Add Group</option>
+          <option>Search</option>
+        </select>
+
+      </div>
+      <div>
+        <button class="border border-blue-800 px-6 py-1 rounded">Logout</button>
+      </div>
+    </nav>
+    <div id="content" class="flex justify-center">
+      <p class="text-2xl">Hey Have a nice day :)
+    
     </div>
   </body>
 </html>
