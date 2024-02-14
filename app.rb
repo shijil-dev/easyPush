@@ -1,10 +1,10 @@
 require 'sinatra'
 get '/' do
-  erb :index
+  erb :dashboard
 end
 
-get '/user/form' do
-  erb :userform
+get '/user/new' do
+  erb :edit
 end
 
 post '/user' do

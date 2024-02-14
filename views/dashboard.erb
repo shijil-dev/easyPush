@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASYPUSH</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <script src="htmx.min.js"></script>
+  </head>
+  <body>
+      <div class="flex w-full h-screen gap-2">
+          <div class=" flex flex-col bg-gray-900 w-1/4 h-screen py-5 content-center">
+            <h1 class="text-2xl font-medium text-white self-center">// easy<span class="text-blue-400">P</span>ush </h1>
+            <div class="grid py-2 gap-4 mx-5 my-10">
+                <button class="rounded-lg bg-blue-800 hover:bg-gray-800 text-white py-2"> User </button>
+                <button hx-get="/user/new" hx-target="#content" class="hover:bg-gray-800 text-white rounded-lg py-2">  Add User </button>
+
+                <button class="rounded-lg bg-blue-800 text-white py-2">Groups </button>
+                <button class="hover:bg-gray-800 text-white rounded-lg py-2"> Add Group </button> 
+                <button class="rounded-lg hover:bg-gray-800 text-white py-2">Feature </button>
+            </div>
+          </div>
+          <div class="h-screen w-screen">
+              <div class="flex justify-end py-5 px-4 w-max gap-5 px-5">
+                <div class="flex w-max gap-5">
+                    <h1 class="self-center">search</h1>
+                    <input name="search" placeholder="search user" class=" border border-gray-900 rounded-xl px-3 py-2"/> 
+                </div>
+                <button class="px-5 bg-gray-900 rounded-lg text-white ">Logout</button>
+              </div>
+              <div id="content" class="flex justify-center py-3"></div>
+          </div>
+
+      </div>
+  </body>
