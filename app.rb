@@ -13,3 +13,9 @@ post '/user' do
   p params[:user]
   p params[:name]
 end
+
+get '/pages/search' do
+  erb :"components/search"
+end
+
+
