@@ -8,29 +8,34 @@
     <script src="htmx.min.js"></script>
   </head>
   <body class="">
-      <div class="flex w-full h-screen divide-x divide-gray-500 bg-gray-200 ">
-          <div class=" flex flex-col w-1/4 h-screen py-5  text-white bg-gray-800 px-4 ">
-            <h1 class="text-2xl font-medium px-6 font-bold cursor-default">// easy<span class="text-blue-400">P</span>ush </h1>
-            <div class=" flex flex-col gap-3 py-2 mx-5 my-10 h-full">
-              <h1 class="cursor-default px-3 text-gray-600 ">User</h1>
-              <h1 hx-get="/user/new" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Add User </h1>
-              <h1 hx-get="/pages/search" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Search </h1>
-              <h1 class="cursor-default px-3 text-gray-600">Group</h1>
-              <h1 hx-get="/group/new" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Add Group </h1>
-              <h1 hx-get="/pages/search" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Search </h1>
-            </div>
-            <div class="self-center">
-              <a href="https://github.com/shijil-dev/ep-sh.git" >About</a>
-            </div>
-          
-          </div>
-          <div class="h-screen w-screen">
-              <div class="flex justify-end py-5 px-4 w-max gap-5 px-5">
-                <button class="px-5 py-1 hover:bg-gray-700 hover:text-white rounded-lg" hx-confirm="sure?" hx-get="/" hx-target="body">Logout</button>
-              </div>
-              <div id="content" class="flex items-center  py-3 flex-col">
-              </div>
-          </div>
+    <div class="flex w-full h-screen divide-x divide-gray-500 bg-gray-200 ">
+      <div class=" flex flex-col w-1/4 h-screen py-5  text-white bg-gray-800 px-4 ">
+
+        <h1 class="text-2xl font-medium px-6 font-bold cursor-default">// easy<span class="text-blue-400">P</span>ush </h1>
+
+        <div class=" flex flex-col gap-3 py-2 mx-5 my-10 h-full">
+          <h1 class="cursor-default px-3 text-gray-600 ">User</h1>
+          <h1 hx-get="/user/new" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Add User </h1>
+          <h1 hx-get="/pages/search" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Search </h1>
+          <h1 class="cursor-default px-3 text-gray-600">Group</h1>
+          <h1 hx-get="/group/new" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Add Group </h1>
+          <h1 hx-get="/pages/search" hx-target="#content" class="hover:font-bold cursor-pointer rounded-lg px-6 text-lg"> Search </h1>
+        </div>
+
+        <div class="self-center">
+          <a href="https://github.com/shijil-dev/ep-sh.git" >About</a>
+        </div>
 
       </div>
+
+      <div class="h-screen w-screen">
+        <div class="flex justify-end py-5 px-4 w-max gap-5 px-5">
+          <button class="rounded-lg hover:text-gray-600 font-semibold px-5 py-1">Account</button>
+          <button class="px-5 py-1 bg-gray-700 hover:bg-gray-900 text-white rounded-lg" hx-confirm="sure?" hx-get="/" hx-target="body">Logout</button>
+        </div>
+        <div id="content" class="flex items-center  py-3 flex-col">
+        </div>
+      </div>
+
+    </div>
   </body>

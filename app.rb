@@ -12,7 +12,7 @@ end
 post '/user' do
   p params[:user]
   p params[:name]
-  erb :user,{locals:params[:user]}
+  erb :"user/user",{locals:params[:user]}
 end
 
 get '/group/new' do
